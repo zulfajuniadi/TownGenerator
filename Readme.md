@@ -11,7 +11,7 @@ Generator Options:
 ![Generator Options](https://i.imgur.com/9Pz3AUi.png "Generator Options")
 
 
-Options:
+Town Options:
 
 - Overlay: Generates ground meshes
 - Walls: Does the generated town have walls
@@ -19,9 +19,20 @@ Options:
 - Patches: How large of a map do you want to generate
 - Seed: The random seed of the generator
 
+Renderer Options:
+
+- Root: The parent of the generated town.
+- Materials: Various materials for different parts of the map
+
 Usage:
 
 View the `TownBuilder.cs` file to see how the generation is initiated.
+
+Todos:
+
+1. Migrate the scripts to use UnityEngine.Vector2.
+2. Reduce GC allocation for generation (Now its around 100MB)
+3. Make the generation multithreaded via jobs
 
 ### License ###
 
